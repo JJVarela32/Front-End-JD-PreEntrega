@@ -1,0 +1,201 @@
+/* Estilo para tu encabezado panorámico con la imagen corregida */
+.mi-encabezado {
+    width: 100%;
+    height: 260px; /* O la altura que prefieras */
+    
+    background-image: url('https://www.dataplus.com.ar/ImagenesPagWeb/CabeceraChatGpt01.jpg'); 
+    background-size: contain;          /* Muestra la imagen íntegra */
+    background-position: left;       /* izquierda */
+    background-repeat: no-repeat;      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    background-color: #0c1b2a;   }      /* Color de fondo para rellenar los espacios si sobra lugar */
+
+/* Hoja de estilos corregida */
+.header {
+    background-color: #f2f2f2;
+    padding: 1px;
+    text-align: center;
+    color: rgba(76, 0, 255, 0.849); font-size: 14px;background-color: #e9ebe1;    
+}   
+/* Eliminamos los valores con errores del selector universal */
+* {    
+    box-sizing: border-box
+}
+
+body { 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;  
+    margin: 5px
+    padding: 20px;
+} 
+
+/* DEFINO EL TAMAÑO,TIPO, COLOR DE FUENTES */
+h1 {font-size: 22px;}
+
+h2 {font-size: 18px;color: blue;}
+
+h3 {font-size: 15px;}
+
+h4 {font-size: 12px;}
+
+
+/* NUEVO PARA COMBINAR FLEXBOX CON LISTA CON HIPERVINCULOS */
+/* Lista desordenada en la cabecera. Uso FlexBox combinado con una lista para que tenga links*/
+.container { 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 70px; 
+    background-color: #eaeaea; 
+    gap: 8px; /* Espacio entre los botones */
+    list-style: none; /* Elimina los puntos de la lista desordenada */
+    margin: 0;
+    padding: 0 10px;
+} 
+
+/* Tus estilos originales para cada tarjeta/botón */
+.item {     
+background-color:darkblue   ; 
+color: white; 
+padding: 15px; 
+margin: 4px; 
+/* ¡Aquí está el toque de diseño! */
+border-radius: 15px;             /* Esquinas redondeadas */
+border: 2px solid #63b3ed;       /* Borde sutil de otro tono */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado elegante */
+
+}
+
+/* Lista desordenada en la cabecera. Uso FlexBox combinado con una lista para que tenga links*/
+.navegacion {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 70px; 
+    background-color: #eaeaea; 
+    gap: 8px; /* Espacio entre los botones */
+    list-style: none; /* Elimina los puntos de la lista desordenada */
+    margin: 0;
+    padding: 0 10px;
+}
+/* Fuerza a que los enlaces dentro de los botones tengan texto blanco y sin subrayado */
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+background-color:darkblue   ; 
+color: white; 
+padding: 15px; 
+margin: 4px; 
+/* ¡Aquí está el toque de diseño! */
+border-radius: 15px;             /* Esquinas redondeadas */
+border: 2px solid #63b3ed;       /* Borde sutil de otro tono */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado elegante */
+}
+
+/* Aqui vamos a crear un contenedor de tipo Grid para las reseñas:  -------------------------------------------------------*/
+/* 1. La clase general de la sección (el contenedor principal de todo el bloque) */
+
+.resenas { /* esta clase resenas le da espacio y formato al bloque entero de la sección en la página. */
+    padding: 40px 20px;
+    background-color: #ffffff; /* O el color de fondo que prefieras para esta sección */
+}
+
+.grid-resenas { /* Esta clase se le pone al div interno para transformar esa zona en una cuadrícula. */
+    display: grid; /* Contenedor de tipo Grid: */
+    /* Crea columnas automáticas que se adaptan al espacio (mínimo 250px por columna) */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0;
+    justify-content: start; /* O elimina esta propiedad si la tenías */
+}
+
+.reseña-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #2b6cb0; /* Un detalle estetico al costado de cada reseña */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+/* Esto es para aplicar al formulario de Contacto Media Queries ---------------------------------------------------*/
+.contacto-contenedor { 
+    display: grid; 
+    grid-template-columns: 1fr; /* 1 columna por defecto */ 
+    gap: 20px; 
+    padding: 20px;     
+    } 
+
+/* Sección general para separar el título del bloque */
+.seccion-contacto {
+    padding: 20px;
+}
+
+/* La tarjeta celeste que envuelve todo */
+.card-contacto { 
+    background-color: #90caf9; 
+    padding: 30px; 
+    border-radius: 10px; 
+    max-width: 500px; /* Ancho cómodo para la caja celeste */
+} 
+
+/* Cada grupo de etiqueta + input organizado con Grid interno */
+.campo-grupo {
+    display: grid;
+    grid-template-columns: 90px 1fr; /* Columna fija para la etiqueta y el resto para el input */
+    align-items: center;            /* Centra verticalmente el texto con la caja */
+    gap: 15px;                      /* Espacio entre la etiqueta y el cuadro */
+    margin-bottom: 15px;            /* Espacio entre cada fila */
+}
+
+/* Estilo para las etiquetas */
+.card-contacto label {
+    font-weight: bold;
+    text-align: right; /* Alinea el texto de la etiqueta hacia la derecha para que quede prolijo cerca del input */
+}
+
+/* Estilo unificado para los inputs y el textarea dentro de la tarjeta */
+.card-contacto input, 
+.card-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+/* Botón de enviar */
+.card-contacto button {
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+    Responsive (@MEDIA) 
+/* Tablets*/ 
+@media (min-width: 600px) { 
+.contacto-contenedor { 
+grid-template-columns: 1fr 1fr; 
+} 
+} 
+/* Laptops y monitores medianos */ 
+@media (min-width: 992px) { 
+.contacto-contenedor { 
+grid-template-columns: 1fr 1fr 1fr; 
+}
+
+} 
+/* Pantallas grandes */ 
+@media (min-width: 1200px) { 
+.contacto-contenedor { 
+grid-template-columns: repeat(4, 1fr); 
+} 
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech 2026</title>
+    <!-- Con esto incorporo refencia a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display="swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="mi-encabezado">    
+    </header>   
+    
+    <main>
+
+ <!-- Este es el nuevo encabezado con los botones-->    
+        <nav class="navegacion">
+            <ul class="container"> <!-- Tu contenedor flex -->
+                <li class="item"><a href="#Soluciones ERP">Soluciones ERP</a></li>                
+                <li class="item"><a href="#Agentes IA">Agentes IA</a></li>                
+                <li class="item"><a href="#Soluciones Infraestructura IT">Soluciones Infraestructura IT</a></li>                                
+            </ul>
+        </nav>    
+
+
+        <section class="resenas">
+            <h2>Reseñas de Clientes</h2>
+            <div class="grid-resenas">
+                <div class="reseña-card">"Excelente servicio, muy recomendable."</div>
+                <div class="reseña-card">"La implementación del ERP fue impecable."</div>
+                <div class="reseña-card">"Soporte técnico rápido y eficiente."</div>
+                <div class="reseña-card">"Inversion segura."</div>
+                <div class="reseña-card">"La integracion de los tableros con IA nos resultó excelente."</div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!-- Formulario de contacto con FormSpree -->
+         
+        <h2>Contacto</h2>
+
+        <section class="seccion-contacto">
+            <div class="contacto-contenedor">
+                <div class="card-contacto">
+                    <form action="https://formspree.io/f/mvkgnnyj" method="POST"> 
+                
+                    <div class="campo-grupo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>    
+    </footer>
+</body>
+
+
+</html>
