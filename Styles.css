@@ -1,10 +1,10 @@
-/* Estilo para tu encabezado panorámico con la imagen corregida */
+/* Estilo para el encabezado panoramico con la imagen corregida */
 .mi-encabezado {
     width: 100%;
     height: 260px; /* O la altura que prefieras */
     
     background-image: url('https://www.dataplus.com.ar/ImagenesPagWeb/CabeceraChatGpt01.jpg'); 
-    background-size: contain;          /* Muestra la imagen íntegra */
+    background-size: contain;          /* Muestra la imagen integra */
     background-position: left;       /* izquierda */
     background-repeat: no-repeat;      
     display: flex;
@@ -21,6 +21,7 @@
     text-align: center;
     color: rgba(76, 0, 255, 0.849); font-size: 14px;background-color: #e9ebe1;    
 }   
+
 /* Eliminamos los valores con errores del selector universal */
 * {    
     box-sizing: border-box
@@ -34,11 +35,8 @@ body {
 
 /* DEFINO EL TAMAÑO,TIPO, COLOR DE FUENTES */
 h1 {font-size: 22px;}
-
 h2 {font-size: 18px;color: blue;}
-
 h3 {font-size: 15px;}
-
 h4 {font-size: 12px;}
 
 
@@ -56,13 +54,13 @@ h4 {font-size: 12px;}
     padding: 0 10px;
 } 
 
-/* Tus estilos originales para cada tarjeta/botón */
+/* Aqui pongo los estilos originales para cada tarjeta/boton */
 .item {     
 background-color:darkblue   ; 
 color: white; 
 padding: 15px; 
 margin: 4px; 
-/* ¡Aquí está el toque de diseño! */
+/* Aqui esta el toque de disenio! */
 border-radius: 15px;             /* Esquinas redondeadas */
 border: 2px solid #63b3ed;       /* Borde sutil de otro tono */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado elegante */
@@ -92,17 +90,17 @@ background-color:darkblue   ;
 color: white; 
 padding: 15px; 
 margin: 4px; 
-/* ¡Aquí está el toque de diseño! */
+/* Aqui esta el toque de disenio! */
 border-radius: 15px;             /* Esquinas redondeadas */
 border: 2px solid #63b3ed;       /* Borde sutil de otro tono */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado elegante */
 }
 
-/* Aqui vamos a crear un contenedor de tipo Grid para las reseñas:  -------------------------------------------------------*/
-/* 1. La clase general de la sección (el contenedor principal de todo el bloque) */
+/* Aqui vamos a crear un contenedor de tipo Grid para las resenias:  -------------------------------------------------------*/
+/* 1. La clase general de la seccion (el contenedor principal de todo el bloque) */
 
 .resenas { /* esta clase resenas le da espacio y formato al bloque entero de la sección en la página. */
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #ffffff; /* O el color de fondo que prefieras para esta sección */
 }
 
